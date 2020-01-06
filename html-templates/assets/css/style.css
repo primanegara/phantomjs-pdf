@@ -1,0 +1,628 @@
+        /* CSS Reset */
+        a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{position:relative;width:100%;border-collapse:collapse;border-spacing:0}
+
+        *, *:before, *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Montserrat', sans-serif; 
+            overflow: auto; 
+            background: #fff; 
+            cursor: default; 
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body { 
+            margin:0; 
+            background: #FFF; 
+            font-size: 9px; 
+            color: #374044;
+            line-height: 14px;
+        }
+
+        /* ==============================
+        PDF CSS : General for All
+        =============================== */
+        /* Table */
+        table {
+            table-layout: fixed; 
+            width: 100%;
+        }
+        table { 
+            border-collapse: separate;
+            border-spacing: 2px;
+        }
+        th, td { 
+            border-width: 1px; 
+            position: relative; 
+            text-align: left;
+        }
+        th, td {
+            border-style: solid;
+        }
+
+        /* Wrapper */
+        #wrapper{
+            /* height: 29.7cm; */
+            margin: 0 auto;
+            width: 21cm;
+            padding: 1px;
+        }
+        .container {
+            width: 592px;
+            position: relative;
+            padding: 0 30px;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 15px;
+        }
+        header:after { 
+            clear: both; 
+            content: ""; 
+            display: table; 
+        }
+        header .main-logo {
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        header .main-logo img {
+            width: 100%;
+        }
+        .header-separator {
+            width: 100%;
+            border-bottom: 1px solid #DDD;
+        }
+
+        .title {
+            font-size: 10px;
+            font-weight: bold;
+            color: #374044;
+            line-height: 14px;
+        }
+        .sub-title {
+            font-size: 8px;
+            color: #8e9497;
+            line-height: 10px;
+        }
+        .pdf-header {
+            position: relative;
+            width: 100%;
+        }
+        .header-content {
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            margin-top: 24px;
+        }
+        .header-content tr, .header-content tr td {
+            border: 0;
+        }
+        .header-content__link {
+            position: relative;
+            width: 100%;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .link-image {
+            height: 32px;
+        }
+        .link--brand {
+            position: relative;
+            left: 0;
+            text-align: left;
+        }
+        .link--brand img {
+            max-width: 158px;
+        }
+        .link--travlr-logo {
+            position: relative;
+            right: 0;
+            text-align: right;
+        }
+        .link--travlr-logo img {
+            max-width: 158px;
+        }
+        /* End Header */
+
+        /* Begin Content */
+        .pdf-content {
+            position: relative;
+            min-height: 108vh;
+        }
+        /* End Content */
+
+        /* Begin Footer */
+        .pdf-footer {
+            position: relative;
+            padding: 24px 0;
+            padding-top: 48px;
+        }
+        .copyright {
+            text-align: center;
+            color: #8e9497;
+        }
+        .footer-atas-img {
+            height: 50px;
+        }
+
+        /* Table Genral Format */
+        .table-clean td {
+            border: none;
+            padding: 2px 0;
+        }
+        .td-h1 {
+            font-size: 10px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #374044;
+        }
+
+        /* Table Passagener */
+        .table-passenger {
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-spacing: 0;
+            border: none;
+            margin-bottom: 5px;
+        }
+        .table-passenger th {
+            padding: 10px 0.5em;
+            background-color: transparent;
+            border-top: 1px solid #DDD;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #DDD;
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+        .table-passenger td {
+            padding: 10px 0.5em;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+
+        /* Table Fare Information */
+        .table-fare-info {
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-spacing: 0;
+            border: none;
+        }
+        .table-fare-info th {
+            padding: 9px 20px;
+            background-color: transparent;
+            border-top: 1px solid #DDD;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #DDD;
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+        .table-fare-info th.top-left-radius {
+            border-radius: 4px 0 0 0;
+            -moz-border-radius: 4px 0 0 0;
+            -webkit-border-radius: 4px 0 0 0;
+        }
+        .table-fare-info th.top-right-radius {
+            border-radius: 0 4px 0 0;
+            -moz-border-radius: 0 4px 0 0;
+            -webkit-border-radius: 0 4px 0 0;
+        }
+        .table-fare-info td {
+            padding: 10px 20px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        /* Grid */
+        .wrap-col {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+        .col {
+            width: 50%;
+            display: table-cell;
+        }
+
+        /* Custom Class and Element */
+        strong {
+            font-weight: bold !important;
+        }
+        .fs-lg {
+            font-size: 14px;
+        }
+        .fs-md {
+            font-size: 10px;
+        }
+        .fs-sm {
+            font-size: 6px;
+        }
+        .mb--5 {
+            margin-bottom: 5px;
+        }
+        .mt--10 {
+            margin-top: 10px;
+        }
+        .mt--20 {
+            margin-top: 20px;
+        }
+        .mb--20 {
+            margin-bottom: 20px;
+        }
+        .fw--bold {
+            font-weight: bold;
+        }
+        .fw--500 {
+            font-weight: 500;
+        }
+        .tt--uppercase {
+            text-transform: uppercase;
+        }
+        .color--secondary {
+            color: #006272;
+        }
+        .color-tertiary {
+            color: #6ba4b8;
+        }
+        .color--light-grey {
+            color: #8e9497;
+        }
+        .color--white {
+            color: #FFF;
+        }
+        .backgroundColor--secondary {
+            background-color: #006272
+        }
+        .backgroundColor--grey-darkest {
+            background-color: #374044
+        }
+        .backgroundColor--tertiary {
+            background-color: #6ba4b8;
+        }
+        .ta--center {
+            text-align: center;
+        }
+        .ta--right {
+            text-align: right;
+        }
+        .text--confirmed {
+            color: #78CC4E;
+        }
+        .text--paid {
+            color: #78CC4E;
+        }
+        .text--processing {
+            color: #F9C80E;
+        }
+        .text--booked {
+            color: #F9C80E;
+        }
+        .text--failed {
+            color: #8E9497;
+        }
+        .text--refunded {
+            color: #8E9497;
+        }
+        .text--bold {
+            font-weight: bold;
+        }
+        .text--uppercase {
+            text-transform: uppercase;
+        }
+        .va--top {
+            vertical-align: top;
+        }
+        .t-body-text {
+            line-height: 15px;
+        }
+        .overflow--hidden {
+            overflow: hidden;
+        }
+        .hr-separator {
+            width: 100%;
+            height: 2px;
+            margin: 30px 0;
+            background-color: #DDD;
+        }
+        .border--radius-topLeft {
+            border-radius: 4px 0 0 0;
+            -moz-border-radius: 4px 0 0 0;
+            -webkit-border-radius: 4px 0 0 0;
+        }
+        .border--radius-topRight {
+            border-radius: 0 4px 0 0;
+            -moz-border-radius: 0 4px 0 0;
+            -webkit-border-radius: 0 4px 0 0;
+        }
+        .border--radius-bottomLeft {
+            border-radius: 0 0 0 4px;
+            -moz-border-radius: 0 0 0 4px;
+            -webkit-border-radius: 0 0 0 4px;
+        }
+        .border--radius-bottomRight {
+            border-radius: 0 0 4px 0;
+            -moz-border-radius: 0 0 4px 0;
+            -webkit-border-radius: 0 0 4px 0;
+        }
+        .border--radius-topLeft-topRight {
+            border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            -webkit-border-radius: 4px 4px 0 0;
+        }
+        .border--radius-bottomLeft-bottomRight {
+            border-radius: 0 0 4px 4px;
+            -moz-border-radius: 0 0 4px 4px;
+            -webkit-border-radius: 0 0 4px 4px;
+        }
+        .border--radius-all {
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+        }
+
+
+        /* ==============================
+        PDF CSS : Accommodation
+        =============================== */
+        /* Begin Booking Header */
+        .booking-header {
+            position: relative;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        .booking-header__content {
+            position: relative;
+            width: 100%;
+        }
+        .booking-header__content tr {
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+        .booking-header__content .content-left {
+            text-align: left;
+        }
+        .booking-header__content .content-right {
+            text-align: right;
+        }
+        .booking-header__content .wording {
+            position: relative;
+            padding: 8px 0;
+        }
+        .booking-content, .booking-content__payment, .booking-content__detail {
+            position: relative;
+            width: 100%;
+        }
+        /* End Booking Header */
+
+        .booking-content__payment table tr td {
+            padding-bottom: 8px;
+        }
+        .booking-content__detail tr td {
+            padding-bottom: 8px;
+        }
+
+        /* ==============================
+        PDF CSS : Flights
+        =============================== */
+        /* Flights header*/
+        .s-flight-header {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+            padding: 10px 16px;
+            color: #FFF;
+            border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            -webkit-border-radius: 4px 4px 0 0;
+        }
+        .s-flight-caption {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+            padding: 10px 16px;
+            border-top: 1px solid #DDD;
+            border-left: 1px solid #DDD;
+            border-right: 1px solid #DDD;
+        }
+        .s-flight-caption-left {
+            width: 50%;
+            display: table-cell;
+        }
+        .s-flight-caption-right {
+            width: 50%;
+            display: table-cell;
+        }
+        .s-flight-item {
+            width: 100%;
+            padding: 15px 16px 15px 16px;
+            display: table;
+            table-layout: fixed;
+            border: 1px solid #DDD;
+        }
+        .s-flight-item-left {
+            width: 180px;
+            display: table-cell;
+        }
+        .s-flight-item-right {
+            width: 100%;
+            display: table-cell;
+            padding-left: 20px;
+        }
+        .s-flight-item-left-image {
+            width: 34px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .s-flight-item-left-img {
+            width: 34px;
+            display: block;
+        }
+        .s-flight-item-left-identity {
+            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 20px;
+        }
+        .s-flight-item-left-identity-name {
+            padding-bottom: 5px;
+        }
+        .s-flight-item-left-identity-code {
+            padding-bottom: 5px;
+        }
+        /* Flights Timeline */
+        .wrap-timeline {
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+        .col-time {
+            width: 60px;
+            display: table-cell;
+        }
+        .col-timeline {
+            width: 80%;
+            display: table-cell;
+            position: relative;
+            top: -5px;
+        }
+        .start-circle {
+            width: 9px;
+            height: 9px;
+            background-color: #FFF;
+            border: 1px solid #006272;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            z-index: 2;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .separate-circle {
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            top: 7px;
+            left: 0;
+            z-index: 1;
+            background-color: transparent;
+            border-top: 1px dashed #CCC;
+            border-bottom: 1px dashed #CCC;
+        }
+        .end-circle {
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 4px;
+            right: 0;
+            z-index: 2;
+            background-color: #006272;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .middle-text {
+            width: 56px;
+            min-height: 21px;
+            padding-top: 5px;
+            top: -4px;
+            left: calc(50% - 30px);
+            font-size: 10px;
+            background-color: #f4f4f4;
+            position: absolute;
+            z-index: 3;
+            text-align: center;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        .s-layover {
+            width: calc(100% - 1px);
+            background-color: #f4f4f4;
+            border: 1px solid #DDD;
+            padding: 7px 16px;
+            text-align: center;
+            position: relative;
+        }
+        .s-layover-layer {
+            width: 100%;
+            text-align: center;
+        }
+        .s-layover-text {
+            padding-left: 2px;
+            position: relative;
+            top: -4px;
+        }
+        .layover-img {
+            width: 17px;
+            top: 2px;
+            position: relative;
+        }
+        .passenger-tables {
+            width: calc(100% - 1px);
+            border-top: none;
+            border-left: 1px solid #DDD;
+            border-right: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+            border-radius: 0 0 4px 4px;
+            -moz-border-radius: 0 0 4px 4px;
+            -webkit-border-radius: 0 0 4px 4px;    
+        }
+        .passenger-th {
+            padding-left: 15px !important;
+        }
+        .passenger-td-no {
+            padding-left: 11px;
+            padding-right: 15px;
+        }
+        .fare-information-tables {
+            width: 340px;
+            border-top: none;
+            border-left: 1px solid #DDD;
+            border-right: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+            border-radius: 4px 4px 4px 4px;
+            -moz-border-radius: 4px 4px 4px 4px;
+            -webkit-border-radius: 4px 4px 4px 4px;    
+        }
+        .cs {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+            vertical-align: middle;
+        }
+        .cs-title {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .cs-left {
+            width: 60%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .cs-right {
+            width: 40%;
+            text-align: right;
+            display: table-cell;
+            vertical-align: middle;
+        }    
