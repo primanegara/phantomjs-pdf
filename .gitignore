@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+.package-lock.json
+__MACOSX
+composer.phar
+yarn-error.log
+*.cache
+README.md
