@@ -187,7 +187,7 @@
             -webkit-border-radius: 0;
         }
         .table-passenger td {
-            padding: 10px 0.5em;
+            padding: 7px 0.5em;
             border-top: none;
             border-right: none;
             border-left: none;
@@ -206,7 +206,7 @@
             border: none;
         }
         .table-fare-info th {
-            padding: 9px 20px;
+            padding: 10px 12px;
             background-color: transparent;
             border-top: 1px solid #DDD;
             border-right: none;
@@ -227,7 +227,7 @@
             -webkit-border-radius: 0 4px 0 0;
         }
         .table-fare-info td {
-            padding: 10px 20px;
+            padding: 7px 12px;
             border-top: none;
             border-right: none;
             border-left: none;
@@ -261,14 +261,26 @@
         .mb--5 {
             margin-bottom: 5px;
         }
-        .mt--10 {
-            margin-top: 10px;
+        .mb--10 {
+            margin-bottom: 10px;
         }
-        .mt--20 {
-            margin-top: 20px;
+        .mb--15 {
+            margin-bottom: 15px;
         }
         .mb--20 {
             margin-bottom: 20px;
+        }
+        .mt--5 {
+            margin-top: 5px;
+        }
+        .mt--10 {
+            margin-top: 10px;
+        }
+        .mt--15 {
+            margin-top: 15px;
+        }
+        .mt--20 {
+            margin-top: 20px;
         }
         .fw--bold {
             font-weight: bold;
@@ -342,7 +354,7 @@
         .hr-separator {
             width: 100%;
             height: 2px;
-            margin: 30px 0;
+            margin: 20px 0;
             background-color: #DDD;
         }
         .border--radius-topLeft {
@@ -430,7 +442,7 @@
             width: 100%;
             display: table;
             table-layout: fixed;
-            padding: 10px 16px;
+            padding: 7px 16px;
             color: #FFF;
             border-radius: 4px 4px 0 0;
             -moz-border-radius: 4px 4px 0 0;
@@ -440,7 +452,7 @@
             width: 100%;
             display: table;
             table-layout: fixed;
-            padding: 10px 16px;
+            padding: 5px 16px;
             border-top: 1px solid #DDD;
             border-left: 1px solid #DDD;
             border-right: 1px solid #DDD;
@@ -455,7 +467,7 @@
         }
         .s-flight-item {
             width: 100%;
-            padding: 15px 16px 15px 16px;
+            padding: 10px 12px;
             display: table;
             table-layout: fixed;
             border: 1px solid #DDD;
